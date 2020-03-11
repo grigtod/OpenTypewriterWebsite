@@ -3237,10 +3237,10 @@ input, select, textarea {
 		}
 
 		body.is-preload #header.alt .logo {
-			-moz-transform: scale(0.8) rotate(-30deg);
-			-webkit-transform: scale(0.8) rotate(-30deg);
-			-ms-transform: scale(0.8) rotate(-30deg);
-			transform: scale(0.8) rotate(-30deg);
+			-moz-transform: scale(0.8) /* rotate(-30deg);*/
+			-webkit-transform: scale(0.8) /* rotate(-30deg);*/
+			-ms-transform: scale(0.8) /* rotate(-30deg);*/
+			transform: scale(0.8) /* rotate(-30deg);*/
 		}
 
 /* Nav */
