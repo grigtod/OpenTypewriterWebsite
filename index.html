@@ -6,6 +6,16 @@
 -->
 <html>
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128272103-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-128272103-2');
+		</script>
+
 		<title>OpenTypewriter</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -27,14 +37,14 @@
 					<nav id="nav">
 						<ul>
 						    <li><a href="#download" class="active">Download</a></li>
-							<li><a href="#info">Info</a></li> 
+							<li><a href="#info">Info</a></li>
 							<li><a href="#source">Source code</a></li>
 							<li><a href="#donate">Donate</a></li>
 						</ul>
 					</nav>
 
 				<!-- Main -->
-					<div id="main"> 
+					<div id="main">
 						<!-- First Section -->
 							<section id="download" class="main special">
 								<header class="major">
@@ -46,7 +56,7 @@
 										<a href="https://github.com/grigtod/OpenTypewriter/releases/download/v1.0.0/OpenTypewriter_v1.0.0.zip" class="button primary">OpenTypewriter_v1.0.0.exe</a>
 									</li>
 									<li>
-										<h3>Linux:</h3> 
+										<h3>Linux:</h3>
 										<h2>Coming Soon!</h2>
 										<!--a href="#" class="button primary">OpenTypewriter_v1.0.0.update extension here</a-->
 									</li>
@@ -63,22 +73,22 @@
 									<div class="content">
 										<header class="major">
 											<h2>How it works?</h2>
-										</header>   
+										</header>
 										<p>You can demo OpenTypewriter on this web page. Please use the text box below to test it: </p>
 										<input type="text" name="demo-name" id="log" value="" placeholder="Test OpenTypewriter by typing here">
 										<br>
 										<p>The desktop app offers a more features such multiple ways to toggle OpenTypewriter, tray icon with settings as well as an easy way to set up your own sound files.</p>
 										<!--p>If you've already downloaded OpenWriter and wish to know more about the software please watch one of these videos: </p-->
-										
+
 										<!--p>You can also find a few sound packs with different effects: </p>
 										• Default  <br>
 										• Lightsaber  <br>
 										• Street fighter <br>
 										• Magic <br-->
-									</div> 
+									</div>
 								</div>
 							</section>
- 
+
 						<!-- Second Section -->
 							<section id="source" class="main special">
 								<header class="major">
@@ -96,19 +106,20 @@
 								</header>
 								<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=U4826QZ63FJ76&source=url" class="button donate" target="_blank">PayPal</a>
 							</section>
-
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
 							<h2>Thank you!</h2>
-							<p>Thanks for checking out OpenTypewriter! If you have any feedback or requests please get in touch.</p>
+							<p>Thanks for checking out OpenTypewriter!</br>
+							If you’re interested in keeping in touch with this and other developments, you can subscribe to my mailing list:
+							<a href="https://mailchi.mp/e5e54a39298a/grigor-newsletter" target="_blank">Link</a>
 						</section>
 						<section>
 							<h2>Credits:</h2>
 							<dl class="alt">
-								<dt>Portfolio:</dt> 
+								<dt>Portfolio:</dt>
 								<dd><a href="https://www.grigtod.com" target="_blank">grigtod.com</a></dd>
 								<dt>Email:</dt>
 								<dd><a href="mailto:grigtod@gmail.com" target="_blank">grigtod@gmail.com</a></dd>
@@ -116,11 +127,10 @@
 						</section>
 						<p class="copyright">Website Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
-
 			</div>
 
 		<!-- Scripts -->
-		
+
 			<script >
 				document.addEventListener('keydown', logKey);
 
@@ -134,12 +144,12 @@
 				if (e.keyCode == 8) playAudio('sfx/sfx_delete.wav');
 				if (e.keyCode == 32) playAudio('sfx/sfx_space.wav');
 				if (e.keyCode == 9) playAudio('sfx/sfx_tab.wav');
-				if (e.keyCode == 13) playAudio('sfx/sfx_newLine.wav'); 
+				if (e.keyCode == 13) playAudio('sfx/sfx_newLine.wav');
 				if (e.keyCode > 47 && e.keyCode < 58 || e.keyCode > 64 && e.keyCode < 91) {
 					if (e.shiftKey) playAudio('sfx/sfx_upperCase.wav');
 					else playAudio('sfx/sfx_lowerCase.wav');
-				} 
-			} 
+				}
+			}
 			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
